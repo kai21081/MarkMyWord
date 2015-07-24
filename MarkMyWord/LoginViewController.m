@@ -30,6 +30,13 @@
 }
 
 -(void)loginViewTapped{
+#ifdef DEBUG
+  UINavigationController *eventsVC = [self.storyboard instantiateViewControllerWithIdentifier:@"EventsVC"];
+  [UIView transitionFromView:self.view toView:eventsVC.view duration:0.5 options:UIViewAnimationOptionTransitionFlipFromLeft completion:^(BOOL finished) {
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.window.rootViewController = eventsVC;
+  }];
+#else
   if (self.emailTextField.text.length > 0 && self.passwordTextField.text.length > 0) {
     NSString *emailAddress = self.emailTextField.text;
     NSString *password = self.passwordTextField.text;
@@ -44,6 +51,7 @@
       }
     }];
   }
+#endif
 }
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField{

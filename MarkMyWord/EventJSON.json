@@ -1,113 +1,67 @@
 [
  {
  "name":"MarinersVsAngels",
+ "home":"Mariners",
+ "away":"Angels",
  "event_img_url":"eventLogo",
  "expiration_date":1432000800,
  "questions":[
               {
-                  "question":"Who's going to win?",
-                  "choice1":"Mariners",
-                  "choice2":"Angels"
+                  "_id":"1001",
+                  "question":"Is Mariners going to win today?"
               },
               {
-                  "question":"Question 2",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
+                  "_id":"1002",
+                  "question":"Question 2"
               },
               {
-                  "question":"Question 3",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
+                  "_id":"1003",
+                  "question":"Question 3"
               },
               {
-                  "question":"Question 4",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
+                  "_id":"1004",
+                  "question":"Question 4"
               },
               {
-                  "question":"Question 5",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
-              },
-              {
-                  "question":"Question 6",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
-              },
-              {
-                  "question":"Question 7",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
-              },
-              {
-                  "question":"Question 8",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
-              },
-              {
-                  "question":"Question 9",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
-              },
-              {
-                  "question":"Question 10",
-                  "choice1":"Choice 1",
-                  "choice2":"Choice 2"
+                  "_id":"1005",
+                  "question":"Question 5"
               }
             ]
  },
  {
  "name":"MarinersVsAngels",
  "event_img_url":"eventLogo",
+ "home":"Rangers",
+ "away":"Mariners",
  "expiration_date":1432006200,
  "questions":[
               {
+              "_id":"1006",
               "question":"Who's going to win?",
               "choice1":"Mariners",
               "choice2":"Angels"
               },
               {
+              "_id":"1007",
               "question":"Question 2",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1008",
               "question":"Question 3",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1009",
               "question":"Question 4",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1010",
               "question":"Question 5",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 6",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 7",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 8",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 9",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 10",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               }
@@ -116,55 +70,37 @@
  {
  "name":"MarinersVsAngels",
  "event_img_url":"eventLogo",
+ "home":"Mariners",
+ "away":"RedSox",
  "expiration_date":1432007100,
  "questions":[
               {
+              "_id":"1011",
               "question":"Who's going to win?",
               "choice1":"Mariners",
               "choice2":"Angels"
               },
               {
+              "_id":"1012",
               "question":"Question 2",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1013",
               "question":"Question 3",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1014",
               "question":"Question 4",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               },
               {
+              "_id":"1015",
               "question":"Question 5",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 6",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 7",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 8",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 9",
-              "choice1":"Choice 1",
-              "choice2":"Choice 2"
-              },
-              {
-              "question":"Question 10",
               "choice1":"Choice 1",
               "choice2":"Choice 2"
               }

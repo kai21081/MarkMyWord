@@ -10,6 +10,7 @@
 #import "MarkMyWordService.h"
 #import "EventsViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+#ifdef DEBUG
+  
+#else
   NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"access_token"];
   if (token != nil) {
     [[MarkMyWordService sharedService] validateMyAccessToken:token completionHandler:^(BOOL isValid, NSString *error) {
@@ -27,17 +31,9 @@
         self.window.rootViewController = eventsVC;
       }
     }];
-//    UIViewController *rootVC = self.window.rootViewController;
-//    EventsViewController *eventsVC = [rootVC.storyboard instantiateViewControllerWithIdentifier:@"EventsVC"];
-//    self.window.rootViewController = eventsVC;
   }
-  
-    
-    
+#endif
 
-    //validate token
-//  }
-  // Override point for customization after application launch.
   return YES;
 }
 

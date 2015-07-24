@@ -71,6 +71,19 @@
       nextPredictionVC.event = self.event;
       [self.navigationController pushViewController:nextPredictionVC animated:true];
     }else{
+#ifdef DEBUG
+      NSString *resultsPath = [[NSBundle mainBundle] pathForResource:@"Results" ofType:@"plist"];
+      NSDictionary *results = [NSDictionary dictionaryWithContentsOfFile:resultsPath];
+      SummaryViewController *summaryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SummaryVC"];
+      // [self.navigationController pushViewController:summaryVC animated:true];
+      [UIView transitionFromView:self.navigationController.view toView:summaryVC.view duration:0.6 options:UIViewAnimationOptionTransitionFlipFromLeft completion:^(BOOL finished) {
+        AppDelegate *delegate = [UIApplication sharedApplication].delegate;
+        delegate.window.rootViewController = summaryVC;
+        summaryVC.results = results;
+        summaryVC.currentEvent = self.event;
+        [summaryVC reloadData];
+      }];
+#else
       [[MarkMyWordService sharedService]updateEventWithEventID:self.event.eventID questions:self.event.predictions completionHandler:^(NSDictionary *results, NSString *error) {
         SummaryViewController *summaryVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SummaryVC"];
        // [self.navigationController pushViewController:summaryVC animated:true];
@@ -82,6 +95,7 @@
           [summaryVC reloadData];
         }];
       }];
+#endif
     }
   }
 }

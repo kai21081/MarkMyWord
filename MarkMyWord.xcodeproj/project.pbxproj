@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FAAC2BA1B621158007A99F7 /* Results.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FAAC2B91B621158007A99F7 /* Results.plist */; };
 		4FE0CDE11B0A495100562794 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0CDE01B0A495100562794 /* main.m */; };
 		4FE0CDE41B0A495100562794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0CDE31B0A495100562794 /* AppDelegate.m */; };
-		4FE0CDE71B0A495100562794 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0CDE61B0A495100562794 /* ViewController.m */; };
 		4FE0CDEA1B0A495100562794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0CDE81B0A495100562794 /* Main.storyboard */; };
 		4FE0CDEC1B0A495100562794 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0CDEB1B0A495100562794 /* Images.xcassets */; };
 		4FE0CDEF1B0A495100562794 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FE0CDED1B0A495100562794 /* LaunchScreen.xib */; };
@@ -41,13 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4FAAC2B91B621158007A99F7 /* Results.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Results.plist; sourceTree = "<group>"; };
 		4FE0CDDB1B0A495100562794 /* MarkMyWord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkMyWord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FE0CDDF1B0A495100562794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FE0CDE01B0A495100562794 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4FE0CDE21B0A495100562794 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FE0CDE31B0A495100562794 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4FE0CDE51B0A495100562794 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4FE0CDE61B0A495100562794 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4FE0CDE91B0A495100562794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FE0CDEB1B0A495100562794 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4FE0CDEE1B0A495100562794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -170,6 +169,7 @@
 				4FE0CE131B0A691C00562794 /* Event.m */,
 				4FE0CE151B0A693200562794 /* Prediction.h */,
 				4FE0CE161B0A693200562794 /* Prediction.m */,
+				4FAAC2B91B621158007A99F7 /* Results.plist */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,8 +191,6 @@
 		4FE0CE111B0A68CA00562794 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4FE0CDE51B0A495100562794 /* ViewController.h */,
-				4FE0CDE61B0A495100562794 /* ViewController.m */,
 				4FE0CE061B0A513000562794 /* EventsViewController.h */,
 				4FE0CE071B0A513000562794 /* EventsViewController.m */,
 				4FE0CE091B0A558900562794 /* PredictionViewController.h */,
@@ -295,6 +293,7 @@
 				4FE0CDEF1B0A495100562794 /* LaunchScreen.xib in Resources */,
 				4FE0CE051B0A4A2200562794 /* EventJSON.json in Resources */,
 				4FE0CDEC1B0A495100562794 /* Images.xcassets in Resources */,
+				4FAAC2BA1B621158007A99F7 /* Results.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +313,6 @@
 			files = (
 				4FE0CE171B0A693200562794 /* Prediction.m in Sources */,
 				4FF835221B0CFED5007FCC90 /* MarkMyWordService.m in Sources */,
-				4FE0CDE71B0A495100562794 /* ViewController.m in Sources */,
 				4FE0CE081B0A513000562794 /* EventsViewController.m in Sources */,
 				4FE0CE1A1B0A838F00562794 /* JSONParseService.m in Sources */,
 				4FE0CE291B0BAED200562794 /* LoginViewController.m in Sources */,

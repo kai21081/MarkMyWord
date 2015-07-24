@@ -22,13 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#ifdef DEBUG
+    NSURL *url =[[NSBundle mainBundle]URLForResource:@"EventJSON" withExtension:@"json"];
+    NSData *jsonData = [[NSData alloc]initWithContentsOfURL:url];
+    self.events = [JSONParseService parseJSONForEvents:jsonData];
+#else
   [[MarkMyWordService sharedService] fetchAllEventsWithBlock:^(NSArray *events, NSString *error) {
     self.events = events;
     [self.tableView reloadData];
   }];
-//  NSURL *url =[[NSBundle mainBundle]URLForResource:@"EventJSON" withExtension:@"json"];
-//  NSData *jsonData = [[NSData alloc]initWithContentsOfURL:url];
-//  self.events = [JSONParseService parseJSONForEvents:jsonData];
+#endif
+
+
   self.tableView.dataSource = self;
   self.tableView.delegate = self;
     // Do any additional setup after loading the view.
